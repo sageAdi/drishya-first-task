@@ -29,9 +29,9 @@ const Wrapper = styled.div`
 export default function Contact() {
    return (
       <Wrapper>
-         <Link to='/'>
+         <a to='/'>
             <img src={logo} alt='logo' />
-         </Link>
+         </a>
 
          <Form>
             <Form.Group controlId='formBasicEmail'>

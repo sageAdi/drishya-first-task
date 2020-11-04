@@ -1,19 +1,26 @@
-import './App.css';
-import Home from './component/Home'
-import Cart from './component/Cart'
-import Contact from './component/Contact'
-import {Switch,Route} from 'react-router-dom'
+/** @format */
+
+import "./App.css";
+import Cart from "./component/Cart";
+import Contact from "./component/Contact";
+import Navigation from "./component/NavigationBar";
+import { useState } from "react";
 
 function App() {
-  return (
-    <div className="app">
-    <Switch>
-      <Route path='/' exact component={Home}/>
-      <Route path='/Cart' component={Cart}/>
-      <Route path='/Contact' component={Contact}/>
-    </Switch>
-    </div>
-  );
+	const [state, setState] = useState(0);
+
+	return (
+		<div className='app'>
+      <Navigation
+        onToggleHome={() => setState(0)}
+				onToggleCart={() => setState(1)}
+				onToggleLogin={() => setState(2)}
+			/>
+			{state === 1 && <Cart />}
+			{state === 2 && <Contact />}
+		
+		</div>
+	);
 }
 
 export default App;

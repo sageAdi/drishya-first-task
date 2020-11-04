@@ -1,5 +1,4 @@
 import React from 'react'
-import Navigation from '../component/NavigationBar'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
@@ -41,7 +40,6 @@ const Wrapper = styled.div`
 export default function Cart() {
    return (
       <div id='Cart'>
-         <Navigation />
          <Wrapper>
             <div className='cart-header'>
                <div className='cart-heading'>
