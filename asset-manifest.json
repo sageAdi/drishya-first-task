@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/drishya-first-task/static/css/main.ab7136cd.chunk.css",
+    "main.js": "/drishya-first-task/static/js/main.236736e2.chunk.js",
+    "main.js.map": "/drishya-first-task/static/js/main.236736e2.chunk.js.map",
+    "runtime-main.js": "/drishya-first-task/static/js/runtime-main.ef28147f.js",
+    "runtime-main.js.map": "/drishya-first-task/static/js/runtime-main.ef28147f.js.map",
+    "static/js/2.2cab0dc3.chunk.js": "/drishya-first-task/static/js/2.2cab0dc3.chunk.js",
+    "static/js/2.2cab0dc3.chunk.js.map": "/drishya-first-task/static/js/2.2cab0dc3.chunk.js.map",
+    "static/js/3.ba0fa2b2.chunk.js": "/drishya-first-task/static/js/3.ba0fa2b2.chunk.js",
+    "static/js/3.ba0fa2b2.chunk.js.map": "/drishya-first-task/static/js/3.ba0fa2b2.chunk.js.map",
+    "index.html": "/drishya-first-task/index.html",
+    "static/css/main.ab7136cd.chunk.css.map": "/drishya-first-task/static/css/main.ab7136cd.chunk.css.map",
+    "static/js/2.2cab0dc3.chunk.js.LICENSE.txt": "/drishya-first-task/static/js/2.2cab0dc3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ef28147f.js",
+    "static/js/2.2cab0dc3.chunk.js",
+    "static/css/main.ab7136cd.chunk.css",
+    "static/js/main.236736e2.chunk.js"
+  ]
+}
