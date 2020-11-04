@@ -1,5 +1,22 @@
 import styled from 'styled-components'
 
+// export const SearhButton = styled(Button)`
+//    .btn-primary {
+//       color: #262626;
+//       background-color: transparent;
+//       border: none;
+//    }
+
+//    &:hover,
+//    &:focus,
+//    &:active {
+//       color: #262626;
+//       background-color: transparent;
+//       border: none;
+//       box-shadow: none;
+//    }
+// `
+
 export const StyledNavbar = styled.div`
    .navbar {
       background: #fff;
@@ -61,21 +78,30 @@ export const StyledNavbar = styled.div`
          display: block;
       }
    }
-   .navbar-toggler {
-      border: 0px;
-   }
-`
-export const SearchBar = styled.div`
-   display: flex;
-   align-items: center;
-   justify-center: center;
-`
-export const RightNavWrapper = styled.div`
-   display: flex;
-   .nav-link {
-      text-decoration: underline;
-      &:hover:after {
-         display: none;
+   .form-inline .form-control {
+      display: none;
+      &:focus {
+         display: block;
       }
+      ${'' /* ${SearhButton}:focus & {
+         display: block;
+      } */}
+   }
+   .btn-primary{
+      color: #262626;
+      background: transparent;
+      border: none;
+      &:focus{
+         box-shadow: none;
+      }
+   }
+   .btn-primary:not(:disabled):not(.disabled):active{
+      color: #262626;
+      background: transparent;
+      border: none;
+   }
+   .cancle{
+      display: none;
+      border: 1px solid black;
    }
 `
