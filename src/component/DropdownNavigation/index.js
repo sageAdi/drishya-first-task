@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Button from 'react-bootstrap/Button'
 import { RiArrowDropDownLine } from 'react-icons/ri'
+import { BiRightArrow } from 'react-icons/bi'
 import {
    Wrapper,
    DropdownMenu,
@@ -22,10 +23,9 @@ export default function DropdownElements() {
          <Wrapper>
             <DropdownMenu>
                <Button onClick={handleDropdownContent}>
-                  All Microsoft
+                  <span className='dropdownSpan'>All Microsoft</span>
                   <RiArrowDropDownLine />
                </Button>
-               {/* <DropdownIcon /> */}
                <DropdownContent className='dropdownContent'>
                   <div className='dropdownContainer'>
                      <Content>
@@ -207,38 +207,10 @@ export default function DropdownElements() {
                            </li>
                         </ul>
                      </Content>
+                     <div className="header-bottom">VIEW SITEMAP<BiRightArrow/></div>
                   </div>
                </DropdownContent>
             </DropdownMenu>
-            {/*<DropdownMenu title='All Microsoft'></DropdownMenu>*/}
-            {/* <NavDropdown title='All Microsoft' id='basic-nav-dropdown'>
-               <DropdownContent>
-                  <Software>
-                     <button>Software</button>
-                     <NavDropdown.Item href='#action/3.1'>
-                        Action
-                     </NavDropdown.Item>
-                     <NavDropdown.Item href='#action/3.2'>
-                        Action1
-                     </NavDropdown.Item>
-                  </Software>
-                  <PCsDevice>
-                     <button>PCs & Device</button>
-                     <NavDropdown.Item href='#action/3.3'>
-                        Action2
-                     </NavDropdown.Item>
-                     <NavDropdown.Item href='#action/3.4'>
-                        Action3
-                     </NavDropdown.Item>
-                  </PCsDevice>
-                  <Entertainment>
-                     <button>Entertainment</button>
-                     <NavDropdown.Item href='#action/3.5'>
-                        Action
-                     </NavDropdown.Item>
-                  </Entertainment>
-               </DropdownContent>
-            </NavDropdown> */}
          </Wrapper>
       </div>
    )

@@ -1,22 +1,5 @@
 import styled from 'styled-components'
 
-// export const SearhButton = styled(Button)`
-//    .btn-primary {
-//       color: #262626;
-//       background-color: transparent;
-//       border: none;
-//    }
-
-//    &:hover,
-//    &:focus,
-//    &:active {
-//       color: #262626;
-//       background-color: transparent;
-//       border: none;
-//       box-shadow: none;
-//    }
-// `
-
 export const StyledNavbar = styled.div`
    .navbar {
       background: #fff;
@@ -42,6 +25,7 @@ export const StyledNavbar = styled.div`
       align-content: center;
       width: 137px;
       margin: 0px;
+      margin-left: -4px;
       img {
          width: 108px;
          max-width: none;
@@ -80,12 +64,9 @@ export const StyledNavbar = styled.div`
    }
    .form-inline .form-control {
       display: none;
-      &:focus {
-         display: block;
-      }
-      ${'' /* ${SearhButton}:focus & {
-         display: block;
-      } */}
+      margin-right: 5px;
+      border: 2px solid #000;
+      border-radius: 0px;
    }
    .btn-primary{
       color: #262626;
@@ -99,9 +80,14 @@ export const StyledNavbar = styled.div`
       color: #262626;
       background: transparent;
       border: none;
+      box-shadow: none;
    }
    .cancle{
       display: none;
       border: 1px solid black;
+      border-radius: 0px;
+   }
+   .right-icons{
+      margin-right: 15px;
    }
 `

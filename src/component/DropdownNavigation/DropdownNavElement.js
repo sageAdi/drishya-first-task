@@ -10,6 +10,20 @@ export const Wrapper = styled.div`
    }
    .btn {
       font-size: 13px;
+      & span {
+        display: inline-block;
+         &:after {
+            content: '';
+            display: none;
+            bottom: 9px;
+            width: 100%;
+            background: #000;
+            height: 2px;
+         }
+         &:hover:after {
+            display: block;
+         }
+      }
    }
 `
 export const DropdownMenu = styled.div`
@@ -30,15 +44,23 @@ export const DropdownContent = styled.div`
    .dropdownContainer {
       width: 100%;
       background: #f2f2f2;
-      margin: 0px 2%;
+      margin: 0px 1%;
       display: flex;
       flex-flow: row wrap;
       justify-content: flex-start;
-      align-items: flex-start;
+   }
+   .header-bottom{
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       background-color: #e6e6e6;
+       padding: 5px;
+       border-bottom: 2px solid #000;
+       align-items: center;
    }
 `
 export const Content = styled.div`
-    justify-self: flex-start;
+   justify-self: flex-start;
    display: flex;
    flex-flow: column wrap;
    & button {
@@ -46,7 +68,7 @@ export const Content = styled.div`
       text-align: start;
       color: #262626;
       font-size: 13px;
-      font-weight: 600px;
+      font-weight: 600;
       padding: 18px 30px 18px 24px;
       border: none;
       background: transparent;
@@ -54,18 +76,22 @@ export const Content = styled.div`
    }
    & ul {
       padding: 0px;
+      width: 200px;
    }
    & li {
       list-style: none;
+      width: 100%;
+      padding: 10px 0px 10px 24px;
+      &:hover {
+            text-decoration: underline;
+         }
       & a {
          text-decoration: none;
          color: #262626;
-         padding: 12px 0px 12px 24px;
+         
          font-size: 13px;
          font-weight: 400px;
-         &:hover {
-            text-decoration: underline;
-         }
+         
       }
    }
 `
