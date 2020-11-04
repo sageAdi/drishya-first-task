@@ -3,7 +3,6 @@ import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import styled from 'styled-components'
 import logo from '../images/logo.png'
-import { Link } from 'react-router-dom'
 
 const Wrapper = styled.div`
    width: 50%;
@@ -29,9 +28,7 @@ const Wrapper = styled.div`
 export default function Contact() {
    return (
       <Wrapper>
-         <a to='/'>
-            <img src={logo} alt='logo' />
-         </a>
+         <img src={logo} alt='logo' />
 
          <Form>
             <Form.Group controlId='formBasicEmail'>
