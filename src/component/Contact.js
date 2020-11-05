@@ -25,14 +25,15 @@ const Wrapper = styled.div`
    }
 `
 
-export default function Contact() {
+export default function Contact(props) {
+   const label = props.label;
    return (
       <Wrapper>
          <img src={logo} alt='logo' />
 
          <Form>
             <Form.Group controlId='formBasicEmail'>
-               <Form.Label>Sign in</Form.Label>
+               <Form.Label>{label}</Form.Label>
                <Form.Control type='email' placeholder='Enter email' />
             </Form.Group>
 

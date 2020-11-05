@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const StyledNavbar = styled.div`
    .navbar {
-      background: #fff;
+      background: ${props => props.bg ? "black" : "#fff"};
       height: 54px;
       font-size: 15px;
       color: #000;
