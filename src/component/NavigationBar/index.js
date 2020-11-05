@@ -19,8 +19,6 @@ export default function Navigaton(props,{
    onToggleHome,
 }) {
    const [searchBtn, setSearchBtn] = useState(false)
-
-   const [title,setTtile] = useState('Microsoft 365');
    const bg = props.bg;
    const handleSearch = (e) => {
       setSearchBtn(!searchBtn)
@@ -52,7 +50,7 @@ export default function Navigaton(props,{
             <Navbar.Collapse id='basic-navbar-nav'>
                {!searchBtn && (
                   <Nav className='mr-auto'>
-                     <Nav.Link href='#365'>{title}</Nav.Link>
+                     <Nav.Link href='#365'>Microsoft 365</Nav.Link>
                      <Nav.Link href='#Office'>Office</Nav.Link>
                      <Nav.Link href='#Windows'>Windows</Nav.Link>
                      <Nav.Link href='#Surface'>Surface</Nav.Link>
